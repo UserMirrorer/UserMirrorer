@@ -20,19 +20,19 @@ for file in os.listdir(DATASET_PATH):
 # Step 1.2 Preprocess
 import pandas as pd
 
-# impression = pd.read_csv(os.path.join(DATASET_PATH, "behaviors_valid.tsv"), sep="\t", header=None, names=["impression_id", "user_id", "time", "history", "impressions"])
-# impression.to_csv(os.path.join(DATASET_PATH, "behaviors.tsv"), index=False, sep="\t", header=None, mode="a")
+impression = pd.read_csv(os.path.join(DATASET_PATH, "behaviors_valid.tsv"), sep="\t", header=None, names=["impression_id", "user_id", "time", "history", "impressions"])
+impression.to_csv(os.path.join(DATASET_PATH, "behaviors.tsv"), index=False, sep="\t", header=None, mode="a")
 
-# df = pd.read_csv(os.path.join(DATASET_PATH, "news.tsv"), sep="\t", header=None, names=["news_id", "category", "sub_category", "title", "abstract", "url", "title_entities", "abstract_entities"])
-# df_2 = pd.read_csv(os.path.join(DATASET_PATH, "news_valid.tsv"), sep="\t", header=None, names=["news_id", "category", "sub_category", "title", "abstract", "url", "title_entities", "abstract_entities"])
-# df_3 = pd.read_csv(os.path.join(DATASET_PATH, "news_test.tsv"), sep="\t", header=None, names=["news_id", "category", "sub_category", "title", "abstract", "url", "title_entities", "abstract_entities"])
+df = pd.read_csv(os.path.join(DATASET_PATH, "news.tsv"), sep="\t", header=None, names=["news_id", "category", "sub_category", "title", "abstract", "url", "title_entities", "abstract_entities"])
+df_2 = pd.read_csv(os.path.join(DATASET_PATH, "news_valid.tsv"), sep="\t", header=None, names=["news_id", "category", "sub_category", "title", "abstract", "url", "title_entities", "abstract_entities"])
+df_3 = pd.read_csv(os.path.join(DATASET_PATH, "news_test.tsv"), sep="\t", header=None, names=["news_id", "category", "sub_category", "title", "abstract", "url", "title_entities", "abstract_entities"])
 #  # Combine the 3 dataframes
-# news = pd.concat([df, df_2, df_3], ignore_index=True, axis=0)
+news = pd.concat([df, df_2, df_3], ignore_index=True, axis=0)
 
 # # Display the first 5 rows
-# news.drop_duplicates("news_id", inplace=True)
+news.drop_duplicates("news_id", inplace=True)
 
-# news.to_csv(os.path.join(DATASET_PATH, "news_all.tsv"), index=False, sep="\t", header=None)
+news.to_csv(os.path.join(DATASET_PATH, "news_all.tsv"), index=False, sep="\t", header=None)
 
 from datetime import datetime
 from tqdm import tqdm
