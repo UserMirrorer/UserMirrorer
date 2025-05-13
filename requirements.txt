@@ -1,0 +1,10 @@
+pandas
+numpy
+scipy
+vllm>=0.8.4
+openai
+datasets
+safetensors
+tqdm
+uszipcode
+sqlalchemy-mate==2.0.0.0
