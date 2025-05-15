@@ -1,5 +1,12 @@
 # 🎉 UserMirrorer: Towards Preference-aligned LLM User Simulator
 
+<a href="https://github.com/UserMirrorer/UserMirrorer/blob/master/LICENSE.md"><img src="https://img.shields.io/github/license/UserMirrorer/UserMirrorer"></a>
+<a href="https://huggingface.co/datasets/MirrorUser/UserMirrorer"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Training_Set-yellow"></a>
+<a href="https://huggingface.co/datasets/MirrorUser/UserMirrorer-eval"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Eval_Set-yellow"></a>
+<a href="https://huggingface.co/MirrorUser/UserMirrorrer-Llama-DPO"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Checkpoint-red"></a>
+
+****
+
 This repository contains the `UserMirrorer` framework for the paper "Mirroring Users: Towards Building Preference-aligned User Simulator with Recommendation Feedback".
 
 ## 📚 Contents
