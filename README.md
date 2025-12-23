@@ -1,8 +1,10 @@
 # 🎉 UserMirrorer: Towards Preference-aligned LLM User Simulator
 
+
 <a href="https://github.com/UserMirrorer/UserMirrorer/blob/master/LICENSE.md"><img src="https://img.shields.io/github/license/UserMirrorer/UserMirrorer"></a>
 <a href="https://huggingface.co/datasets/MirrorUser/UserMirrorer"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Training_Set-yellow"></a>
 <a href="https://huggingface.co/datasets/MirrorUser/UserMirrorer-eval"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Eval_Set-yellow"></a>
+<a href="https://arxiv.org/abs/2508.18142"><img src="https://img.shields.io/badge/arXiv-2508.18142-orange"></a>
 <a href="https://huggingface.co/MirrorUser/UserMirrorrer-Llama-DPO"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Checkpoint-red"></a>
 
 ****
@@ -173,3 +175,18 @@ python usermirrorer/run_eval.py \
     --repeat_times <REPEAT_TIMES> \         # The number ofsampling times
 ```
 
+## 📝 Citation
+
+If you find this work useful in your research, please consider citing the following paper:
+
+```bibtex
+@misc{wei2025mirroringusersbuildingpreferencealigned,
+      title={Mirroring Users: Towards Building Preference-aligned User Simulator with User Feedback in Recommendation}, 
+      author={Tianjun Wei and Huizhong Guo and Yingpeng Du and Zhu Sun and Huang Chen and Dongxia Wang and Jie Zhang},
+      year={2025},
+      eprint={2508.18142},
+      archivePrefix={arXiv},
+      primaryClass={cs.HC},
+      url={https://arxiv.org/abs/2508.18142}, 
+}
+```
